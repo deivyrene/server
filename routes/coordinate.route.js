@@ -8,4 +8,6 @@ router.get('/listAll', coordinate_controller.listAll);
 
 router.post('/search', coordinate_controller.search);
 
+router.delete('/:id/delete', coordinate_controller.delete);
+
 module.exports = router;

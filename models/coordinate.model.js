@@ -3,8 +3,8 @@ require('mongoose-double')(mongoose);
 const Schema = mongoose.Schema;
 
 let CoordinateSchema = new Schema({
-    lat: {type: Number, required: true, min: 3},
-    lng: {type: Number, required: true, min: 3},
+    lat: {type: Number, required: true },
+    lng: {type: Number, required: true },
     description: {type: String, required: true}
 });
 

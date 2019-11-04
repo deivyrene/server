@@ -1,4 +1,4 @@
-# Main Api
+# Server
 
 Servicio REST para registro de coordenadas y descripción en MONGODB. Los endpoint son los siguientes:
 

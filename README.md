@@ -31,4 +31,14 @@ $ node app.js
 
 Listo!! Ya tu servidor se ha iniciado el el puerto :1234
 
+Puedes hacer pruebas de los endpoint usando Postman.
+
+License
+----
+
+MIT
+
+
+**Free Software, Hell Yeah!**
+
 

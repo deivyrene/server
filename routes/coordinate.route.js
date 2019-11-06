@@ -10,4 +10,6 @@ router.post('/search', coordinate_controller.search);
 
 router.delete('/:id/delete', coordinate_controller.delete);
 
+router.get('/coordinates', coordinate_controller.get);
+
 module.exports = router;

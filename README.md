@@ -1,11 +1,15 @@
 # Server
 
-Servicio REST para registro de coordenadas y descripción en MONGODB. Los endpoint son los siguientes:
+Endpoint para registro de coordenadas y descripción en MONGODB. Los endpoint son los siguientes:
 
   - http://localhost:1234/coordinates/create
   - http://localhost:1234/coordinates/listAll
   - http://localhost:1234/coordinates/search
   - http://localhost:1234/coordinates/:id/delete
+
+El servidor se desplego en EC2 de AWS, la url:
+
+http://ec2-3-83-64-115.compute-1.amazonaws.com
 
 ### Tecnología 
 
@@ -16,6 +20,7 @@ El servicio maneja las siguientes tecnologias:
 * [Socket.IO]
 * [MongoDB]
 * [Redis]
+* [EC2] -> Servicio AWS
 
 ### Instalacion
 

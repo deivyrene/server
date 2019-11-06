@@ -24,11 +24,10 @@ exports.search = function (req, res) {
     var like = new RegExp(req.body.description, "i")
     var query = { description: like };
     client.get('search', function (err, data) {
+        client.set('keyword', JSON.stringify(req.body.description));
         if (data) {
-            console.log('redis');
             res.send(data)
         } else {
-            console.log('db');
             Coordinate.find(query, function (err, coodinates) {
                 if (err) return res.status(400).json(err.message);
                 if (coodinates != '') { 
@@ -48,10 +47,8 @@ exports.search = function (req, res) {
 exports.listAll = function (req, res) {
     client.get('listAll', function (err, data) {
         if (data) {
-            console.log('redis');
             res.send(data)
         } else {
-            console.log('db');
             Coordinate.find({}, function (err, coodinates) {
                 if (err) return res.status(400).json(err.message);
                 client.set('listAll', JSON.stringify(coodinates));

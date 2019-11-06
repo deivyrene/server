@@ -9,7 +9,7 @@ Endpoint para registro de coordenadas y descripción en MONGODB. Los endpoint so
 
 El servidor se desplego en EC2 de AWS, la url con el puerto 1234:
 
-http://ec2-3-83-64-115.compute-1.amazonaws.com:1234/coordinates
+http://ec2-3-83-64-115.compute-1.amazonaws.com:1234/coordinates/listAll
 
 ### Tecnología 
 

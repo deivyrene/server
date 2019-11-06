@@ -15,14 +15,17 @@ El servicio maneja las siguientes tecnologias:
 * [Express]
 * [Socket.IO]
 * [MongoDB]
+* [Redis]
 
 ### Instalacion
 
 Se requiere instalar [Node.js](https://nodejs.org/) v10+ to run.
 
-Clonar e instalar las dependencias, para iniciar el servidor.
+Instalar Redis y clonar e instalar las dependencias, para iniciar el servidor.
 
 ```sh
+$ sudo apt-get install redis-server
+$ sudo systemctl enable redis-server.service
 $ git clone https://github.com/deivyrene/server.git
 $ cd server
 $ npm install -d
